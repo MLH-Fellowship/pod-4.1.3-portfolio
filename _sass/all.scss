@@ -150,12 +150,21 @@ a {
 }
 
 .label {
-	margin: 5px auto;
+	margin: 5px;
 	font-size: 0.9rem;
 }
 
 .leaderboard-table {
-  padding: 40px 90px;
+  padding: 3% 5%;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+	background-color:  white;
+  }
+
+.header-row{
+	background-color: #006292;
+	color: white;
 }
 
 @media only screen and (max-width: 1500px) {
@@ -208,7 +217,10 @@ a {
 	}
 
 	.leaderboard-table {
-		margin: 25px 50px;
+		margin: 0px;
+		overflow-wrap: break-word;
+		padding: 0px;
+		max-width: 20%;
 	}
 }
 
