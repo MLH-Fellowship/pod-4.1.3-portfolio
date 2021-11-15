@@ -2,11 +2,13 @@
 name: Hou Chi Chan
 college:
 location:
-img: logo.jpg
+img: hou.jpg
 linkedin:
 twitter:
 instagram:
 facebook:
+languages:
+hobbies:
 ---
 
 Add some content here

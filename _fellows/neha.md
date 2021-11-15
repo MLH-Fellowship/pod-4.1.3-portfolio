@@ -2,11 +2,13 @@
 name: Neha Kumari
 college:
 location:
-img: amanda.jpg
+img: neha.jpg
 linkedin:
 twitter:
 instagram:
 facebook:
+languages:
+hobbies:
 ---
 
 Add some content here
