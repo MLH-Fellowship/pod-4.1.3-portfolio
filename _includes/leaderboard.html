@@ -3,12 +3,11 @@
 <div class="leaderboard-table" data-aos="fade-up" data-aos-duration="700">
   <table class="table table-bordered table-striped">
     <thead>
-      <tr>
+      <tr class="header-row">
         <th scope="col">Rank</th>
         <th scope="col">Team</th>
-        <th scope="col">Member 1</th>
-        <th scope="col">Member 2</th>
-        <th scope="col">PRs Merged</th>
+        <th scope="col">Members</th>
+        <th scope="col">PRs</th>
       </tr>
     </thead>
     <tbody id="leaderboard-tablebody"></tbody>
@@ -119,12 +118,10 @@ let teams =
         var teamName = document.createElement("td");
         teamName.innerHTML = "Team " + team.team;
         var username1 = document.createElement("td");
-        username1.innerHTML = team.username1;
-        var username2 = document.createElement("td");
-        username2.innerHTML = team.username2;
+        username1.innerHTML = team.username1 +" & "+team.username2;
         var count = document.createElement("td");
         count.innerHTML = team.PRs;
-        tableRow.append(rank, teamName, username1, username2, count);
+        tableRow.append(rank, teamName, username1, count);
         par.append(tableRow);
       });
     });

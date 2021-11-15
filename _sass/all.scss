@@ -150,12 +150,21 @@ a {
 }
 
 .label {
-  margin: 5px auto;
-  font-size: 0.9rem;
+	margin: 5px;
+	font-size: 0.9rem;
 }
 
 .leaderboard-table {
-  padding: 40px 90px;
+  padding: 3% 5%;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+	background-color:  white;
+  }
+g,   
+.header-row{
+	background-color: #006292;
+	color: white;
 }
 
 @media only screen and (max-width: 1500px) {
@@ -188,28 +197,31 @@ a {
 }
 
 @media only screen and (max-width: 768px) {
-  .card-container {
-    grid-template-columns: 1fr;
-  }
+	.card-container {
+		grid-template-columns: 1fr;
+	}
 
-  .card-leaderboard {
-    width: 75% !important;
-    background-color: none;
-  }
+	.card-leaderboard {
+		width: 75% !important;
+		background-color: none;
+	}
 
-  .github-stats img {
-    max-width: 90%;
-  }
+	.github-stats img {
+		max-width: 90%;
+	}
 
-  .github-image {
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-  }
+	.github-image {
+		border-radius: 50%;
+		width: 60px;
+		height: 60px;
+	}
 
-  .leaderboard-table {
-    margin: 25px 50px;
-  }
+	.leaderboard-table {
+		margin: 0px;
+		overflow-wrap: break-word;
+		padding: 0px;
+		max-width: 20%;
+	}
 }
 
 body {
